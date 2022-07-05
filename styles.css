@@ -124,7 +124,7 @@ header .heading-container {
 }
 
 header .heading-container h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   width: 10em;
 }
@@ -182,11 +182,6 @@ section.own-pizza .card {
   color: white;
   margin: 1em;
   padding: 1em;
-}
-
-section.own-pizza .card span {
-  font-weight: bold;
-  font-size: 1.05rem;
 }
 
 section.own-pizza .card ul {
@@ -267,7 +262,7 @@ footer .socials {
   display: -ms-flexbox;
   display: flex;
   gap: 1em;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
 
 footer .socials img {
