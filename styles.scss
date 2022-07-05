@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: relative;
+
+    .logo{
+        width: 8em;
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+
+    nav{
+        background: black;
+        width: 100%;
+        height: 5em;
+
+            .open-menu{
+                position: absolute;
+                top: 1.25em;
+                right: 1em;
+                width: 2.5em;
+                cursor: pointer;
+            }
+
+            .close-menu{
+                position: absolute;    
+                right: 1em;
+                top: 1.25em;   
+                width: 2.5em;
+                cursor: pointer;        
+            }
+
+            ul{
+                transform: translateX(100%);
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: black;
+                width: 50%;
+                height: 100vh;
+                padding: 5em 1em;
+                transition: transform 0.5s ease;
+
+                li{
+                    margin: 1em 0;
+                    font-size: 1.1rem;
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        &:hover{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+            .active{
+                transform: translateX(0);
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: black;
+                width: 50%;
+                height: 100vh;
+                padding: 5em 1em;
+                transition: transform 0.5s ease;
+
+                    li{
+                        margin: 1em 0;
+                        font-size: 1.1rem;
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            &:hover{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+            }
+
+            
+    }
+
+    .heading-container{
+
+        display: flex;
+        justify-content: right;
+        margin-bottom: 1em;
+        margin-right: 1.2em;
+
+        h1{
+            font-size: 1.8rem;
+            text-align: center;
+            width: 10em;
+        }
+    }
+
+    p.order{
+        margin: 1em;
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-align: center;
+
+            a{
+                color: rgb(8, 0, 78);
+
+                &:hover{
+                    font-size: 1.3rem;
+                }
+            }
+    }
+
+}
+
+
+//images
+
+section.imgs{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        width: 18em;
+        height: 18em;
+        margin-bottom: 1em;
+    }
+
+    .not-show{
+        display: none;
+    }
+}
+
+
+//pizzas offer
+
+.pizzas{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+//own pizza
+
+section.own-pizza{
+    
+    p{
+        margin: 1em;
+    }
+
+
+    .card{
+        width: 90%;
+        background-color: black;
+        color: white;
+        margin: 1em;
+        padding: 1em;
+
+            ul{
+                list-style-type: none;
+                display: none;
+            }
+
+            ul.opened{
+                display: inline-block;
+                animation: slideIn 0.8s forwards; 
+            }
+
+            img.opened{
+                transform: rotate(180deg);
+                transition: transform 0.5s ease;
+            }
+
+            .in-card-container{
+                display: flex;
+                justify-content: space-between;
+
+
+                    .open-card{
+                        cursor: pointer;
+                    }
+            }
+    }
+}
+
+
+//FOOTER
+
+footer{
+    background-color: black;
+    color: white;
+
+        .opening-time{
+            margin-left: 1em;
+            padding-top: 1em;
+            font-size: 1.2rem;
+        }
+
+        .delivery-price{
+            margin: 1em;
+            font-size: 1.2rem;
+        }
+
+        .contact-phone{
+            display: flex;
+            gap: 0.5em;
+            margin: 1em;
+            font-size: 1.2rem;
+        }
+
+        .contact-address{
+            display: flex;
+            gap: 0.5em;
+            margin: 1em;
+            font-size: 1.2rem;
+        }
+
+        .socials{
+            margin: 1em;
+            display: flex;
+            gap: 1em;
+            font-size: 1.5rem;
+
+                img{
+                    width: 2em;
+                }
+        }
+}
+
+
+//ANIMACE
+
+@keyframes slideIn {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
