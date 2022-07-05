@@ -42,7 +42,7 @@ header{
 
             ul{
                 transform: translateX(100%);
-                position: absolute;
+                position: fixed;
                 top: 0;
                 right: 0;
                 background-color: black;
@@ -67,7 +67,7 @@ header{
 
             .active{
                 transform: translateX(0);
-                position: absolute;
+                position: fixed;
                 top: 0;
                 right: 0;
                 background-color: black;

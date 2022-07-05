@@ -46,7 +46,7 @@ header nav .close-menu {
 header nav ul {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background-color: black;
@@ -76,7 +76,7 @@ header nav ul li a:hover {
 header nav .active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background-color: black;
