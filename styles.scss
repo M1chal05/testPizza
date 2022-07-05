@@ -50,16 +50,20 @@ header{
                 height: 100vh;
                 padding: 5em 1em;
                 transition: transform 0.5s ease;
+                overflow: hidden;
 
                 li{
                     margin: 1em 0;
                     font-size: 1.1rem;
+                    text-transform: uppercase;
+                            font-weight: bold;
 
                     a{
                         text-decoration: none;
                         color: white;
                         &:hover{
                             font-size: 1.2rem;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -75,6 +79,7 @@ header{
                 height: 100vh;
                 padding: 5em 1em;
                 transition: transform 0.5s ease;
+                z-index: 999;
 
                     li{
                         margin: 1em 0;
@@ -83,8 +88,11 @@ header{
                         a{
                             text-decoration: none;
                             color: white;
+                            text-transform: uppercase;
+                            font-weight: bold;
                             &:hover{
                                 font-size: 1.2rem;
+                                text-decoration: underline;
                             }
                         }
                     }
@@ -98,7 +106,7 @@ header{
         display: flex;
         justify-content: right;
         margin-bottom: 1em;
-        margin-right: 1.2em;
+        
 
         h1{
             font-size: 1.8rem;
@@ -169,6 +177,11 @@ section.own-pizza{
         margin: 1em;
         padding: 1em;
 
+            span{
+                font-weight: bold;
+                font-size: 1.05rem;
+            }
+
             ul{
                 list-style-type: none;
                 display: none;
@@ -219,6 +232,11 @@ footer{
             gap: 0.5em;
             margin: 1em;
             font-size: 1.2rem;
+
+                a{
+                    color: white;
+                    font-weight: bold;
+                }
         }
 
         .contact-address{
@@ -232,7 +250,7 @@ footer{
             margin: 1em;
             display: flex;
             gap: 1em;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
 
                 img{
                     width: 2em;
