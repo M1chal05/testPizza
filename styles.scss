@@ -51,6 +51,7 @@ header{
                 padding: 5em 1em;
                 transition: transform 0.5s ease;
                 overflow: hidden;
+                list-style-type: none;
 
                 li{
                     margin: 1em 0;
@@ -80,6 +81,7 @@ header{
                 padding: 5em 1em;
                 transition: transform 0.5s ease;
                 z-index: 999;
+                list-style-type: none;
 
                     li{
                         margin: 1em 0;

@@ -58,6 +58,7 @@ header nav ul {
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   overflow: hidden;
+  list-style-type: none;
 }
 
 header nav ul li {
@@ -92,6 +93,7 @@ header nav .active {
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   z-index: 999;
+  list-style-type: none;
 }
 
 header nav .active li {
