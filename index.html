@@ -31,7 +31,7 @@
             <h1>Skvělá pizza v Klatovech!</h1>
         </div>
 
-        <p class="order">Zavolej na +420 604 810 973 nebo si <a href="https://www.damejidlo.cz/restaurant/w80g/pizza-box">objednej přes Dáme jídlo</a> </p>
+        <p class="order">Zavolej na +420 604 810 973 nebo si <a href="https://www.damejidlo.cz/restaurant/w80g/pizza-box">objednej přes Dáme jídlo</a></p>
 
     </header>
 
@@ -41,132 +41,138 @@
         <img src="./images/pizza2.jpg" alt="Obrázek pizzy" class="not-show">
     </section>
 
-     <img src="./images/menu.png" alt="Nabídka pizz" class="pizzas" id="pizzas">
-
+    <div class="pizzas-container">
+        <img src="./images/menu.png" alt="Nabídka pizz" class="pizzas" id="pizzas">
+    </div>
+    
      <section class="own-pizza" id="ownPizza">
         <p>Nevybral sis? Nevadí! Poskládej si takovou pizzu, na jakou máš zrovna chuť.</p>
         <p>Cena je 100 Kč + ingredience navíc:</p>
 
-        <div class="card">
+        <div class="card-container">
 
-            <div class="in-card-container">
-                <h3>Sýry</h3>
-                <img src="./images/arrow.svg" alt="Rozbalit nabídku sýrů" id="openCard1" class="open-card">
+            <div class="card">
+
+                <div class="in-card-container">
+                    <h3>Sýry</h3>
+                    <img src="./images/arrow.svg" alt="Rozbalit nabídku sýrů" id="openCard1" class="open-card">
+                    
+                </div>
+
+                <ul id="card1">
+                    <li>Mozzarella v nálevu +35 Kč</li>
+                    <li>Cheddar +35 Kč</li>
+                    <li>Uzený eidam +35 Kč</li>
+                    <li>Mozzarella +35 Kč</li>
+                    <li>Parmazán +35 Kč</li>
+                    <li>Camembert +35 Kč</li>
+                    <li>Eidam +35 Kč</li>
+                    <li>Gorgonzola +35 Kč</li>
+                </ul>
+            </div>
+
+            <div class="card">
+
+                <div class="in-card-container">
+                    <h3>Uzeniny</h3>
+                    <img src="./images/arrow.svg" alt="Rozbalit nabídku uzenin" id="openCard2" class="open-card">
                 
+                </div>
+
+                <ul id="card2">
+                    <li>Slanina +35 Kč</li>
+                    <li>Šunka +35 Kč</li>
+                    <li>Chorizo +35 Kč</li>
+                    <li>Paprikový salám +35 Kč</li>
+                    <li>Klobása +35 Kč</li>
+                    <li>Parmská šunka +45 Kč</li>
+                    <li>Kuřecí maso +45 Kč</li>
+                </ul>
             </div>
 
-            <ul id="card1">
-                <li>Mozzarella v nálevu +35 Kč</li>
-                <li>Cheddar +35 Kč</li>
-                <li>Uzený eidam +35 Kč</li>
-                <li>Mozzarella +35 Kč</li>
-                <li>Parmazán +35 Kč</li>
-                <li>Camembert +35 Kč</li>
-                <li>Eidam +35 Kč</li>
-                <li>Gorgonzola +35 Kč</li>
-            </ul>
-        </div>
+            <div class="card">
 
-        <div class="card">
-
-            <div class="in-card-container">
-                <h3>Uzeniny</h3>
-                <img src="./images/arrow.svg" alt="Rozbalit nabídku uzenin" id="openCard2" class="open-card">
-               
-            </div>
-
-            <ul id="card2">
-                <li>Slanina +35 Kč</li>
-                <li>Šunka +35 Kč</li>
-                <li>Chorizo +35 Kč</li>
-                <li>Paprikový salám +35 Kč</li>
-                <li>Klobása +35 Kč</li>
-                <li>Parmská šunka +45 Kč</li>
-                <li>Kuřecí maso +45 Kč</li>
-            </ul>
-        </div>
-
-        <div class="card">
-
-            <div class="in-card-container">
-                <h3>Čerstvá zelenina</h3>
-                <img src="./images/arrow.svg" alt="Rozbalit nabídku čerstvé zeleniny" id="openCard3" class="open-card">
-               
-            </div>
-
-
-            <ul id="card3">
-                <li>Rajče +25 Kč</li>
-                <li>Cherry rajčátka +25 Kč</li>
-                <li>Paprika +25 Kč</li>
-                <li>Špenát +25 Kč</li>
-                <li>Cibule +25 Kč</li>
-                <li>Kukuřice +25 Kč</li>
-                <li>Chilly papričky +25 Kč</li>
-                <li>Žampiony +25 Kč</li>
-                <li>Brokolice +25 Kč</li>
-                <li>Bazalka +25 Kč</li>
-                <li>Rukola +25 Kč</li>
-                <li>Červená cibulka +25 Kč</li>
-                <li>Česnek +25 Kč</li>
-            </ul>
-        </div>
-
-        <div class="card">
-
-            <div class="in-card-container">
-                <h3>Zelenina</h3>
-                <img src="./images/arrow.svg" alt="Rozbalit nabídku zeleniny" id="openCard4" class="open-card">
-               
-            </div>
-
-            <ul id="card4">
-                <li>Artyčoky +25 Kč</li>
-                <li>Kapary +25 Kč</li>
-                <li>Sušená rajčata +25 Kč</li>
-                <li>Jalapeños +25 Kč</li>
-                <li>Fazole +25 Kč</li>
-                <li>Zelené olivy +25 Kč</li>
-                <li>Černé olivy +25 Kč</li>
-                <li>Beraní rohy +25 Kč</li>
-                <li>Hříbky +30 Kč</li>
-            </ul>
-        </div>
-
-        <div class="card">
-
-            <div class="in-card-container">
-                <h3>Ryby</h3>
-                <img src="./images/arrow.svg" alt="Rozbalit nabídku ryb" id="openCard5" class="open-card">
-               
-            </div>
-
-
-            <ul id="card5">
-                <li>Tuňák +50 Kč</li>
-                <li>Dary moře +50 Kč</li>
-                <li>Ančovičky +50 Kč</li>
-            </ul>
-        </div>
-
-        <div class="card">
-
-            <div class="in-card-container">
-                <h3>Ovoce</h3>
-                <img src="./images/arrow.svg" alt="Rozbalit nabídku ovoce" id="openCard6" class="open-card">
+                <div class="in-card-container">
+                    <h3>Čerstvá zelenina</h3>
+                    <img src="./images/arrow.svg" alt="Rozbalit nabídku čerstvé zeleniny" id="openCard3" class="open-card">
                 
+                </div>
+
+
+                <ul id="card3">
+                    <li>Rajče +25 Kč</li>
+                    <li>Cherry rajčátka +25 Kč</li>
+                    <li>Paprika +25 Kč</li>
+                    <li>Špenát +25 Kč</li>
+                    <li>Cibule +25 Kč</li>
+                    <li>Kukuřice +25 Kč</li>
+                    <li>Chilly papričky +25 Kč</li>
+                    <li>Žampiony +25 Kč</li>
+                    <li>Brokolice +25 Kč</li>
+                    <li>Bazalka +25 Kč</li>
+                    <li>Rukola +25 Kč</li>
+                    <li>Červená cibulka +25 Kč</li>
+                    <li>Česnek +25 Kč</li>
+                </ul>
             </div>
 
-            <ul id="card6">
-                <li>Ananas +25 Kč</li>
-                <li>Jahody +25 Kč</li>
-                <li>Borůvky +25 Kč</li>
-                <li>Brusinky +10 Kč</li>
-            </ul>
-        </div>
+            <div class="card">
 
-        <div class="card">
-            <h3>Vejce +10 Kč</h3>
+                <div class="in-card-container">
+                    <h3>Zelenina</h3>
+                    <img src="./images/arrow.svg" alt="Rozbalit nabídku zeleniny" id="openCard4" class="open-card">
+                
+                </div>
+
+                <ul id="card4">
+                    <li>Artyčoky +25 Kč</li>
+                    <li>Kapary +25 Kč</li>
+                    <li>Sušená rajčata +25 Kč</li>
+                    <li>Jalapeños +25 Kč</li>
+                    <li>Fazole +25 Kč</li>
+                    <li>Zelené olivy +25 Kč</li>
+                    <li>Černé olivy +25 Kč</li>
+                    <li>Beraní rohy +25 Kč</li>
+                    <li>Hříbky +30 Kč</li>
+                </ul>
+            </div>
+
+            <div class="card">
+
+                <div class="in-card-container">
+                    <h3>Ryby</h3>
+                    <img src="./images/arrow.svg" alt="Rozbalit nabídku ryb" id="openCard5" class="open-card">
+                
+                </div>
+
+
+                <ul id="card5">
+                    <li>Tuňák +50 Kč</li>
+                    <li>Dary moře +50 Kč</li>
+                    <li>Ančovičky +50 Kč</li>
+                </ul>
+            </div>
+
+            <div class="card">
+
+                <div class="in-card-container">
+                    <h3>Ovoce</h3>
+                    <img src="./images/arrow.svg" alt="Rozbalit nabídku ovoce" id="openCard6" class="open-card">
+                    
+                </div>
+
+                <ul id="card6">
+                    <li>Ananas +25 Kč</li>
+                    <li>Jahody +25 Kč</li>
+                    <li>Borůvky +25 Kč</li>
+                    <li>Brusinky +10 Kč</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Vejce +10 Kč</h3>
+            </div>
+
         </div>
      </section>
 
@@ -185,19 +191,21 @@
                 cena 6 Kč/km + cena obalu = 10 Kč</p>
         </div>
 
-        <div class="contact-phone">
-            <img src="./images/phone.svg" alt="Ikona telefonu">
-            <p>+420 604 810 973</p>
-        </div>
-        <div class="contact-address">
-            <img src="./images/house.svg" alt="Obrázek domu">
-            <p>Klatovy - Luby ul. 5. Května 65</p>
-        </div>
-        
-        <div class="socials">
-            <p>Sleduj nás také na:</p>
-            <a href="https://www.instagram.com/pizza_box_klatovy/"><img src="./images/instagram.svg" alt="Ikona instagramu"></a>
-            <a href="https://www.facebook.com/people/Pizza-Box_Klatovy/100077044530224/"><img src="./images/facebook.svg" alt="Ikona facebooku"></a>
+        <div class="container">
+            <div class="contact-phone">
+                <img src="./images/phone.svg" alt="Ikona telefonu">
+                <p>+420 604 810 973</p>
+            </div>
+            <div class="contact-address">
+                <img src="./images/house.svg" alt="Obrázek domu">
+                <p>Klatovy - Luby ul. 5. Května 65</p>
+            </div>
+            
+            <div class="socials">
+                <p>Sleduj nás také na:</p>
+                <a href="https://www.instagram.com/pizza_box_klatovy/"><img src="./images/instagram.svg" alt="Ikona instagramu"></a>
+                <a href="https://www.facebook.com/people/Pizza-Box_Klatovy/100077044530224/"><img src="./images/facebook.svg" alt="Ikona facebooku"></a>
+            </div>
         </div>
      </footer>
 
